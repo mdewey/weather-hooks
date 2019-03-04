@@ -7,10 +7,6 @@ export default function WeatherSearch(props) {
   const [weather, setWeather] = useState({})
 
   const fetchWeather = e => {
-    if (e) {
-      e.preventDefault()
-    }
-
     const key = '5c418bd61b262dfeab5ee02852a70c07'
     const _url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${key}`
     if (search.length > 4) {
